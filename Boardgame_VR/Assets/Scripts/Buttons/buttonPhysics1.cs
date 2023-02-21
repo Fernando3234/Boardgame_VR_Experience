@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class buttonPhysics : MonoBehaviour
+public class buttonPhysics1 : MonoBehaviour
 {
     [SerializeField] private float threshold = 0.5f;
     [SerializeField] private float deadZone = 0.025f;
