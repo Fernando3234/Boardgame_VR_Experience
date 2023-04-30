@@ -1,0 +1,34 @@
+{
+    "name": "buttonControll",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "b13963b7-a7f3-4b61-9cf7-66b6db532b0e",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "cdcac6e9-7c35-442c-a5db-7cf5da0a9c83",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c84d535c-297f-4e3a-8ebe-0baa45577bc9",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

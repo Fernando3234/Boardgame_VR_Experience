@@ -13,8 +13,9 @@ public class buttonPhysics1 : MonoBehaviour
     private Vector3 startPos;
     private ConfigurableJoint joint;
 
+
     public UnityEvent onPressed, onReleased;
-    public teli p1;
+    public hideShowMenu menu1;
 
     void Start() {
         startPos = transform.localPosition;
@@ -23,10 +24,11 @@ public class buttonPhysics1 : MonoBehaviour
 
     void Update()
     {
-        if (!isPressed && GetValue() + threshold >= 1) { 
+        if (!isPressed && GetValue() + threshold >= 1)
+        {
             Pressed();
         }
-        if (isPressed && GetValue() - threshold <= 0)
+        if (isPressed && GetValue() - threshold <= 0 )
         {
             Released();
         }
@@ -56,6 +58,6 @@ public class buttonPhysics1 : MonoBehaviour
         isPressed= false;
         onReleased.Invoke();
         Debug.Log("Released");
-        teli.p1 = true;
+        hideShowMenu.menu1 = !hideShowMenu.menu1;
     }
 }
