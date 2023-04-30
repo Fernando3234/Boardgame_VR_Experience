@@ -22,5 +22,9 @@ public class Play1ButtonReady1 : MonoBehaviour
         {
             button1.sharedMaterial = material[1];
         }
+        else if (teli.p1 == false)
+        {
+            button1.sharedMaterial = material[0];
+        }
     }
 }
